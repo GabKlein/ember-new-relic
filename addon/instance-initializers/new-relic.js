@@ -13,8 +13,10 @@ export function initialize() {
     } catch(e) {
       // Ignore
     }
-
-    console.error(error.stack);
+    
+    if (error.stack) {
+      console.error(error.stack);
+    }
   }
 
   function generateError(cause, stack) {
