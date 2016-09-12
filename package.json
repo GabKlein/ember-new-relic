@@ -1,6 +1,6 @@
 {
   "name": "ember-new-relic",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Adds New Relic to your Ember CLI app based on the app's environment",
   "directories": {
     "doc": "doc",
@@ -8,8 +8,9 @@
   },
   "scripts": {
     "build": "ember build",
+    "posttest": "cd ../",
     "start": "ember server",
-    "test": "ember try:testall"
+    "test": "cd node_tests && node run.js"
   },
   "repository": "https://github.com/sir-dunxalot/ember-new-relic",
   "engines": {
@@ -32,10 +33,12 @@
     "ember-cli-sri": "^1.2.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "1.13.15",
+    "ember-disable-prototype-extensions": "^1.0.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
-    "ember-disable-prototype-extensions": "^1.0.0",
-    "ember-try": "~0.0.8"
+    "ember-try": "~0.0.8",
+    "object-assign": "^4.1.0",
+    "qunit": "^0.9.1"
   },
   "keywords": [
     "ember-addon",
