@@ -14,7 +14,7 @@ export function initialize() {
       // Ignore
     }
     
-    if (error.stack) {
+    if (error && error.stack) {
       console.error(error.stack);
     }
   }
